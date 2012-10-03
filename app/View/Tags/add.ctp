@@ -1,20 +1,19 @@
 <div class="tags form">
 <?php echo $this->Form->create('Tag'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Tag'); ?></legend>
+		<legend><?php echo __('Agregar tag'); ?></legend>
 	<?php
-		echo $this->Form->input('name');
-		echo $this->Form->input('Post');
+		echo $this->Form->input('name', array('label' => 'Nombre:'));
+		echo $this->Form->input('Post', array('label' => 'Post:'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Agregar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Tags'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Regresar'), array('action' => 'index')); ?></li>
+		
 	</ul>
 </div>

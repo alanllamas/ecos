@@ -1,37 +1,37 @@
 <div class="posts view">
 <h2><?php  echo __('Post'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('Id:'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Categoria'); ?></dt>
+		<dt><?php echo __('Categoria:'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($post['Categoria']['name'], array('controller' => 'categorias', 'action' => 'view', $post['Categoria']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('User'); ?></dt>
+		<dt><?php echo __('Usuario:'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Title'); ?></dt>
+		<dt><?php echo __('Título:'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['title']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Body'); ?></dt>
+		<dt><?php echo __('Contenido:'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['body']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['modified']); ?>
 			&nbsp;
@@ -39,36 +39,27 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Post'), array('action' => 'edit', $post['Post']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Post'), array('action' => 'delete', $post['Post']['id']), null, __('Are you sure you want to delete # %s?', $post['Post']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Categorias'), array('controller' => 'categorias', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Categoria'), array('controller' => 'categorias', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Comentarios'), array('controller' => 'comentarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Comentario'), array('controller' => 'comentarios', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Conjuntions'), array('controller' => 'conjuntions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Conjuntion'), array('controller' => 'conjuntions', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tags'), array('controller' => 'tags', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tag'), array('controller' => 'tags', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar post'), array('action' => 'edit', $post['Post']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Eliminar Post'), array('action' => 'delete', $post['Post']['id']), null, __('Estas seguro de querer borrar el Post # %s?', $post['Post']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Regresar'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo post'), array('action' => 'add')); ?> </li>
+		
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Comentarios'); ?></h3>
+	<h3><?php echo __('Comentarios relacionados'); ?></h3>
 	<?php if (!empty($post['Comentario'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Post Id'); ?></th>
-		<th><?php echo __('Email'); ?></th>
+		<th><?php echo __('E-mail'); ?></th>
 		<th><?php echo __('Comentario'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo __('Creado'); ?></th>
+		<th><?php echo __('Modificado'); ?></th>
+		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php
 		$i = 0;
@@ -81,9 +72,9 @@
 			<td><?php echo $comentario['created']; ?></td>
 			<td><?php echo $comentario['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'comentarios', 'action' => 'view', $comentario['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'comentarios', 'action' => 'edit', $comentario['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'comentarios', 'action' => 'delete', $comentario['id']), null, __('Are you sure you want to delete # %s?', $comentario['id'])); ?>
+				<?php echo $this->Html->link(__('Ver'), array('controller' => 'comentarios', 'action' => 'view', $comentario['id'])); ?>
+				<?php echo $this->Html->link(__('Editar'), array('controller' => 'comentarios', 'action' => 'edit', $comentario['id'])); ?>
+				<?php echo $this->Form->postLink(__('Eliminar'), array('controller' => 'comentarios', 'action' => 'delete', $comentario['id']), null, __('¿Estas seguro que deseas eliminar el Comentario # %s?', $comentario['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -92,21 +83,21 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Comentario'), array('controller' => 'comentarios', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('Nuevo comentario'), array('controller' => 'comentarios', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Conjuntions'); ?></h3>
+	<h3><?php echo __('Conjunciones relacionadas'); ?></h3>
 	<?php if (!empty($post['Conjuntion'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Name'); ?></th>
+		<th><?php echo __('Nombre'); ?></th>
 		<th><?php echo __('Descripcion'); ?></th>
 		<th><?php echo __('X'); ?></th>
 		<th><?php echo __('Y'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php
 		$i = 0;
@@ -118,9 +109,9 @@
 			<td><?php echo $conjuntion['x']; ?></td>
 			<td><?php echo $conjuntion['y']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'conjuntions', 'action' => 'view', $conjuntion['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'conjuntions', 'action' => 'edit', $conjuntion['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'conjuntions', 'action' => 'delete', $conjuntion['id']), null, __('Are you sure you want to delete # %s?', $conjuntion['id'])); ?>
+				<?php echo $this->Html->link(__('Ver'), array('controller' => 'conjuntions', 'action' => 'view', $conjuntion['id'])); ?>
+				<?php echo $this->Html->link(__('Editar'), array('controller' => 'conjuntions', 'action' => 'edit', $conjuntion['id'])); ?>
+				<?php echo $this->Form->postLink(__('Eliminar'), array('controller' => 'conjuntions', 'action' => 'delete', $conjuntion['id']), null, __('¿Estas seguro que deseas eliminar la Conjuncion # %s?', $conjuntion['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -129,20 +120,20 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Conjuntion'), array('controller' => 'conjuntions', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('Nueva conjuncion'), array('controller' => 'conjuntions', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Tags'); ?></h3>
+	<h3><?php echo __('Tags relacionados'); ?></h3>
 	<?php if (!empty($post['Tag'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Name'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo __('Nombre'); ?></th>
+		<th><?php echo __('Creado'); ?></th>
+		<th><?php echo __('Modificado'); ?></th>
+		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php
 		$i = 0;
@@ -153,9 +144,9 @@
 			<td><?php echo $tag['created']; ?></td>
 			<td><?php echo $tag['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'tags', 'action' => 'view', $tag['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'tags', 'action' => 'edit', $tag['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tags', 'action' => 'delete', $tag['id']), null, __('Are you sure you want to delete # %s?', $tag['id'])); ?>
+				<?php echo $this->Html->link(__('Ver'), array('controller' => 'tags', 'action' => 'view', $tag['id'])); ?>
+				<?php echo $this->Html->link(__('Editar'), array('controller' => 'tags', 'action' => 'edit', $tag['id'])); ?>
+				<?php echo $this->Form->postLink(__('Eliminar'), array('controller' => 'tags', 'action' => 'delete', $tag['id']), null, __('¿Estas seguro de querer eliminar el Tag # %s?', $tag['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -164,7 +155,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Tag'), array('controller' => 'tags', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('Nuevo Tag'), array('controller' => 'tags', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

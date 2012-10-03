@@ -1,22 +1,21 @@
 <div class="perfiles form">
-<?php echo $this->Form->create('Perfile'); ?>
+<?php echo $this->Form->create('Perfil'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Perfile'); ?></legend>
+		<legend><?php echo __('Agregar Perfil'); ?></legend>
 	<?php
-		echo $this->Form->input('user_id');
-		echo $this->Form->input('nombre');
-		echo $this->Form->input('apellidos');
-		echo $this->Form->input('email');
+		echo $this->Form->input('user_id', array('label' => 'ID:'));
+		echo $this->Form->input('nombre', array('label' => 'Nombre:'));
+		echo $this->Form->input('apellidos', array('label' => 'Apellidos:'));
+		echo $this->Form->input('email', array('label' => 'E-mail:'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Agregar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Perfiles'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Regresar'), array('action' => 'index')); ?></li>
+
 	</ul>
 </div>

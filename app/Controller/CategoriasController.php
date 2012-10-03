@@ -27,7 +27,7 @@ class CategoriasController extends AppController {
 	public function view($id = null) {
 		$this->Categoria->id = $id;
 		if (!$this->Categoria->exists()) {
-			throw new NotFoundException(__('Invalid categoria'));
+			throw new NotFoundException(__('Categoria invalida'));
 		}
 		$this->set('categoria', $this->Categoria->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class CategoriasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Categoria->create();
 			if ($this->Categoria->save($this->request->data)) {
-				$this->Session->setFlash(__('The categoria has been saved'));
+				$this->Session->setFlash(__('La categoria ha sido guardada'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The categoria could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La categoria no ha sido guardada, intentelo nuevamente'));
 			}
 		}
 	}
@@ -59,14 +59,14 @@ class CategoriasController extends AppController {
 	public function edit($id = null) {
 		$this->Categoria->id = $id;
 		if (!$this->Categoria->exists()) {
-			throw new NotFoundException(__('Invalid categoria'));
+			throw new NotFoundException(__('Categoria invalida'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Categoria->save($this->request->data)) {
-				$this->Session->setFlash(__('The categoria has been saved'));
+				$this->Session->setFlash(__('La categoria ha sido guardada'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The categoria could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La categoria no ha sido guardada, intentelo nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Categoria->read(null, $id);
@@ -87,13 +87,13 @@ class CategoriasController extends AppController {
 		}
 		$this->Categoria->id = $id;
 		if (!$this->Categoria->exists()) {
-			throw new NotFoundException(__('Invalid categoria'));
+			throw new NotFoundException(__('Categoria invalida'));
 		}
 		if ($this->Categoria->delete()) {
-			$this->Session->setFlash(__('Categoria deleted'));
+			$this->Session->setFlash(__('Categoria eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Categoria was not deleted'));
+		$this->Session->setFlash(__('La categoria no ha sido eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

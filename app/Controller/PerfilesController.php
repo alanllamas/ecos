@@ -27,7 +27,7 @@ class PerfilesController extends AppController {
 	public function view($id = null) {
 		$this->Perfile->id = $id;
 		if (!$this->Perfile->exists()) {
-			throw new NotFoundException(__('Invalid perfile'));
+			throw new NotFoundException(__('Perfil Invalido'));
 		}
 		$this->set('perfile', $this->Perfile->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class PerfilesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Perfile->create();
 			if ($this->Perfile->save($this->request->data)) {
-				$this->Session->setFlash(__('The perfile has been saved'));
+				$this->Session->setFlash(__('El perfil ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The perfile could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El perfil no ha sido guardado, intentelo nuevamente.'));
 			}
 		}
 		$users = $this->Perfile->User->find('list');
@@ -61,14 +61,14 @@ class PerfilesController extends AppController {
 	public function edit($id = null) {
 		$this->Perfile->id = $id;
 		if (!$this->Perfile->exists()) {
-			throw new NotFoundException(__('Invalid perfile'));
+			throw new NotFoundException(__('Perfil invalido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Perfile->save($this->request->data)) {
-				$this->Session->setFlash(__('The perfile has been saved'));
+				$this->Session->setFlash(__('El perfil ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The perfile could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El perfil no ha sido guardado, intentelo nuevamente.'));
 			}
 		} else {
 			$this->request->data = $this->Perfile->read(null, $id);
@@ -91,13 +91,13 @@ class PerfilesController extends AppController {
 		}
 		$this->Perfile->id = $id;
 		if (!$this->Perfile->exists()) {
-			throw new NotFoundException(__('Invalid perfile'));
+			throw new NotFoundException(__('Perfil invalido'));
 		}
 		if ($this->Perfile->delete()) {
-			$this->Session->setFlash(__('Perfile deleted'));
+			$this->Session->setFlash(__('Perfil eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Perfile was not deleted'));
+		$this->Session->setFlash(__('El perfil no ha sido eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 }
