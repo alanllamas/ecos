@@ -6,17 +6,17 @@
 			<?php echo h($tag['Tag']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Name'); ?></dt>
+		<dt><?php echo __('Nombre'); ?></dt>
 		<dd>
 			<?php echo h($tag['Tag']['name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
 			<?php echo h($tag['Tag']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
 			<?php echo h($tag['Tag']['modified']); ?>
 			&nbsp;
@@ -24,29 +24,28 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Tag'), array('action' => 'edit', $tag['Tag']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Tag'), array('action' => 'delete', $tag['Tag']['id']), null, __('Are you sure you want to delete # %s?', $tag['Tag']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tags'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tag'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar tag'), array('action' => 'edit', $tag['Tag']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Eliminar tag'), array('action' => 'delete', $tag['Tag']['id']), null, __('¿Estas seguro de querer eliminar el Tag # %s?', $tag['Tag']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Regresar'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo tag'), array('action' => 'add')); ?> </li>
+		
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Posts'); ?></h3>
+	<h3><?php echo __('Posts relacionados'); ?></h3>
 	<?php if (!empty($tag['Post'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Categoria Id'); ?></th>
 		<th><?php echo __('User Id'); ?></th>
-		<th><?php echo __('Title'); ?></th>
-		<th><?php echo __('Body'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo __('Título'); ?></th>
+		<th><?php echo __('Contenido'); ?></th>
+		<th><?php echo __('Creado'); ?></th>
+		<th><?php echo __('Modificado'); ?></th>
+		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php
 		$i = 0;
@@ -60,9 +59,9 @@
 			<td><?php echo $post['created']; ?></td>
 			<td><?php echo $post['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'posts', 'action' => 'view', $post['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'posts', 'action' => 'edit', $post['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'posts', 'action' => 'delete', $post['id']), null, __('Are you sure you want to delete # %s?', $post['id'])); ?>
+				<?php echo $this->Html->link(__('Ver'), array('controller' => 'posts', 'action' => 'view', $post['id'])); ?>
+				<?php echo $this->Html->link(__('Editar'), array('controller' => 'posts', 'action' => 'edit', $post['id'])); ?>
+				<?php echo $this->Form->postLink(__('Elimianr'), array('controller' => 'posts', 'action' => 'delete', $post['id']), null, __('¿Estas seguro de querer eliminar el Post # %s?', $post['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -71,7 +70,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('Nuevo post'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

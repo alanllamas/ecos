@@ -27,7 +27,7 @@ class ComentariosController extends AppController {
 	public function view($id = null) {
 		$this->Comentario->id = $id;
 		if (!$this->Comentario->exists()) {
-			throw new NotFoundException(__('Invalid comentario'));
+			throw new NotFoundException(__('Comentario invalido'));
 		}
 		$this->set('comentario', $this->Comentario->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class ComentariosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Comentario->create();
 			if ($this->Comentario->save($this->request->data)) {
-				$this->Session->setFlash(__('The comentario has been saved'));
+				$this->Session->setFlash(__('El comentario ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The comentario could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El comentario no ha sido guardado, intentelo nuevamente'));
 			}
 		}
 		$posts = $this->Comentario->Post->find('list');
@@ -61,14 +61,14 @@ class ComentariosController extends AppController {
 	public function edit($id = null) {
 		$this->Comentario->id = $id;
 		if (!$this->Comentario->exists()) {
-			throw new NotFoundException(__('Invalid comentario'));
+			throw new NotFoundException(__('Comentario invalido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Comentario->save($this->request->data)) {
-				$this->Session->setFlash(__('The comentario has been saved'));
+				$this->Session->setFlash(__('El comentario ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The comentario could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El comentario no ha sido guardado, intentelo nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Comentario->read(null, $id);
@@ -91,13 +91,13 @@ class ComentariosController extends AppController {
 		}
 		$this->Comentario->id = $id;
 		if (!$this->Comentario->exists()) {
-			throw new NotFoundException(__('Invalid comentario'));
+			throw new NotFoundException(__('Comentario invalido'));
 		}
 		if ($this->Comentario->delete()) {
-			$this->Session->setFlash(__('Comentario deleted'));
+			$this->Session->setFlash(__('Comentario eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Comentario was not deleted'));
+		$this->Session->setFlash(__('El comentario no fue eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

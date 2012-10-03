@@ -27,7 +27,7 @@ class PostsController extends AppController {
 	public function view($id = null) {
 		$this->Post->id = $id;
 		if (!$this->Post->exists()) {
-			throw new NotFoundException(__('Invalid post'));
+			throw new NotFoundException(__('Post invalido'));
 		}
 		$this->set('post', $this->Post->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class PostsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Post->create();
 			if ($this->Post->save($this->request->data)) {
-				$this->Session->setFlash(__('The post has been saved'));
+				$this->Session->setFlash(__('El post ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El post no ha sido guardado, intentelo nuevamente'));
 			}
 		}
 		$categorias = $this->Post->Categoria->find('list');
@@ -64,14 +64,14 @@ class PostsController extends AppController {
 	public function edit($id = null) {
 		$this->Post->id = $id;
 		if (!$this->Post->exists()) {
-			throw new NotFoundException(__('Invalid post'));
+			throw new NotFoundException(__('Post invalido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Post->save($this->request->data)) {
-				$this->Session->setFlash(__('The post has been saved'));
+				$this->Session->setFlash(__('El post ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El post no ha sido guardado, intentelo nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Post->read(null, $id);
@@ -97,13 +97,13 @@ class PostsController extends AppController {
 		}
 		$this->Post->id = $id;
 		if (!$this->Post->exists()) {
-			throw new NotFoundException(__('Invalid post'));
+			throw new NotFoundException(__('Post invalido'));
 		}
 		if ($this->Post->delete()) {
-			$this->Session->setFlash(__('Post deleted'));
+			$this->Session->setFlash(__('Post eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Post was not deleted'));
+		$this->Session->setFlash(__('El post no ha sido eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

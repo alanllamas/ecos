@@ -27,7 +27,7 @@ class TagsController extends AppController {
 	public function view($id = null) {
 		$this->Tag->id = $id;
 		if (!$this->Tag->exists()) {
-			throw new NotFoundException(__('Invalid tag'));
+			throw new NotFoundException(__('Tag invalido'));
 		}
 		$this->set('tag', $this->Tag->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class TagsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Tag->create();
 			if ($this->Tag->save($this->request->data)) {
-				$this->Session->setFlash(__('The tag has been saved'));
+				$this->Session->setFlash(__('El tag ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The tag could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El tag no ha sido guardado, intentelo nuevamente'));
 			}
 		}
 		$posts = $this->Tag->Post->find('list');
@@ -61,14 +61,14 @@ class TagsController extends AppController {
 	public function edit($id = null) {
 		$this->Tag->id = $id;
 		if (!$this->Tag->exists()) {
-			throw new NotFoundException(__('Invalid tag'));
+			throw new NotFoundException(__('Tag invalido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Tag->save($this->request->data)) {
-				$this->Session->setFlash(__('The tag has been saved'));
+				$this->Session->setFlash(__('El tag ha sido guardado'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The tag could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El tag no ha sido guardado, intentelo nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Tag->read(null, $id);
@@ -91,13 +91,13 @@ class TagsController extends AppController {
 		}
 		$this->Tag->id = $id;
 		if (!$this->Tag->exists()) {
-			throw new NotFoundException(__('Invalid tag'));
+			throw new NotFoundException(__('Tag invalido'));
 		}
 		if ($this->Tag->delete()) {
-			$this->Session->setFlash(__('Tag deleted'));
+			$this->Session->setFlash(__('Tag eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Tag was not deleted'));
+		$this->Session->setFlash(__('Tag no eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 }
