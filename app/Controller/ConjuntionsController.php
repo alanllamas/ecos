@@ -100,4 +100,8 @@ class ConjuntionsController extends AppController {
 		$this->Session->setFlash(__('Conjuncion no eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+	public function busqueda(){
+		$this->layout = 'public';
+	}
 }
