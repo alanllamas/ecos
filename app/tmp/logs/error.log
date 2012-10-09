@@ -501,3 +501,30 @@
 2012-10-05 19:31:35 Error: [MissingControllerException] Controller class ViewController could not be found.
 #0 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-10-09 11:53:44 Error: [MissingActionException] Action PostsController::img() could not be found.
+#0 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-09 11:54:32 Error: [MissingActionException] Action PostsController::img() could not be found.
+#0 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-09 11:54:44 Error: [MissingActionException] Action PostsController::img() could not be found.
+#0 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-09 12:02:33 Error: [MissingHelperException] Helper class htmlHelper could not be found.
+#0 /home/alan/sites/ecos/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('html')
+#1 /home/alan/sites/ecos/lib/Cake/View/View.php(807): HelperCollection->__isset('html')
+#2 /home/alan/sites/ecos/app/View/Posts/post.ctp(32): View->__get('html')
+#3 /home/alan/sites/ecos/lib/Cake/View/View.php(915): include('/home/alan/site...')
+#4 /home/alan/sites/ecos/lib/Cake/View/View.php(878): View->_evaluate('/home/alan/site...', Array)
+#5 /home/alan/sites/ecos/lib/Cake/View/View.php(470): View->_render('/home/alan/site...')
+#6 /home/alan/sites/ecos/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#7 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

@@ -111,5 +111,10 @@ class PostsController extends AppController {
 		$data =$this->Post->find('all');
 		$this->set('post', array_shift($data));
 	}
+	public function posts(){
+		$this->layout = "public";
+		$data =$this->Post->find('all');
+		$this->set('post', $data);
+	}
 }
 
