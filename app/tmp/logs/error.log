@@ -528,3 +528,144 @@
 #8 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #9 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2012-10-10 13:51:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-10 13:51:03 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-10 14:08:55 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:08:55 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:09:49 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:09:49 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:11:20 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:11:20 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:11:54 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:11:54 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:12:42 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 24]
+2012-10-10 14:12:42 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 24, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 24, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:16:30 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:16:30 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:16:52 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:16:52 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:17:09 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 10]
+2012-10-10 14:17:09 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 10, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:23:39 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 18]
+2012-10-10 14:23:39 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 18, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 18, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:24:33 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 18]
+2012-10-10 14:24:33 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 18, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 18, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:24:39 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 18]
+2012-10-10 14:24:39 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 18, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 18, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:25:04 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 38]
+2012-10-10 14:25:04 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 38, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 38, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 14:25:31 Error: [MissingHelperException] Helper class textHelper could not be found.
+#0 /home/alan/sites/ecos/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('text')
+#1 /home/alan/sites/ecos/lib/Cake/View/View.php(807): HelperCollection->__isset('text')
+#2 /home/alan/sites/ecos/app/View/Posts/posts.ctp(10): View->__get('text')
+#3 /home/alan/sites/ecos/lib/Cake/View/View.php(915): include('/home/alan/site...')
+#4 /home/alan/sites/ecos/lib/Cake/View/View.php(878): View->_evaluate('/home/alan/site...', Array)
+#5 /home/alan/sites/ecos/lib/Cake/View/View.php(470): View->_render('/home/alan/site...')
+#6 /home/alan/sites/ecos/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#7 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /home/alan/sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-10-10 15:07:30 Error: Fatal Error (4): syntax error, unexpected T_LNUMBER in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 15]
+2012-10-10 15:07:30 Error: [FatalErrorException] syntax error, unexpected T_LNUMBER
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 15, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 15, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 15:07:33 Error: Fatal Error (4): syntax error, unexpected T_LNUMBER in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 15]
+2012-10-10 15:07:33 Error: [FatalErrorException] syntax error, unexpected T_LNUMBER
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 15, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 15, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 15:07:39 Error: Fatal Error (4): syntax error, unexpected T_LNUMBER in [/home/alan/sites/ecos/app/View/Posts/posts.ctp, line 15]
+2012-10-10 15:07:39 Error: [FatalErrorException] syntax error, unexpected T_LNUMBER
+#0 /home/alan/sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/alan/site...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/alan/site...', 15, Array)
+#2 /home/alan/sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/alan/site...', 15, Array)
+#3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-10 18:22:05 Error: [MissingControllerException] Controller class ConjuntiosController could not be found.
+#0 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
