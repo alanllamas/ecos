@@ -99,7 +99,13 @@ section.post{
 	clear: both;
 	margin: 0;
 	padding: 0 0 10px 10px;
-	width: 80%;
+	width: 72%;
+}
+h3.post.tags{
+	margin: 0;
+	display: block;
+	width: 180px;
+	float: right;
 }
 ul.post{
 	background: #fff;
@@ -107,7 +113,7 @@ ul.post{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 19%;
+	width: 27%;
 }
 ul.post li{
 	background: #31B404;
@@ -126,12 +132,12 @@ ul.post a{
 }
 
 footer.post{
-	height: 100px;
 	margin: 0;
 	padding: 0;
 }
 footer.post dl{
 	width: 80%;
+	margin: 55px 0 0 0;
 }
 footer.post dt{
 	color: #fff;
@@ -140,31 +146,21 @@ footer.post dt{
 	margin: 20px 20px;
 	padding: 0;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-	width: 20%;
 }
-.socialmedia.post{
-	float: right;
-	width: 20%;
-}
-.socialmedia.post a{
-	color: #fff;
-	display: block;
+footer.post dd{
+	border-right: dotted 2px #6E6E6E;
+	color: #6E6E6E;
+	display: inline-block;
 	float: left;
-	font-weight: bold;
-	height: 32px;
-	margin: 32px 24px;
-	text-decoration: none;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-	width: 32px;
+	font-size: .8em;
+	margin: 20px 0 0 0;
+	padding:  3px 25px 0 0;
 }
-.f{
-	background: url('/ecos/img/facebook.png');
-}
-.t{
-	background: url('/ecos/img/twitter.png');
+footer.post dd:last-child{
+	border: none;
 }
 /*Arreglos Posts*/
-header.posts h2{
+header.postslist h3{
 	padding: 23px;
 }
 table.postslist{
@@ -192,7 +188,7 @@ table.postslist img{
 #contenido{
 	display: block;
 	padding: 1em;
-	width: 95%;
+	width: 85%;
 }
 #contenido p{
 	display: inline-block;
@@ -212,6 +208,73 @@ table.postslist img{
 	margin: 5px 30px 0 0;
 	padding: 0;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+#categoria dd{
+	font-weight: normal;
+	color: #2E2E2E;
+}
+/* Arreglos Comentarios*/
+header.comentarios h2{
+	padding: 20px 60px;
+ }
+ section.comentarios {
+ 	width: 70%;
+ 	margin: 0 auto;
+ 	
+ }
+ article.comentarios {
+ 	margin: 1.5em 0 0 0;
+ 	box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+ }
+ article.comentarios .p{
+ 	margin: 0 10em 0 0;
+ 	color: #848484;
+ }
+
+/* Arreglos Add Comentario*/
+header.add_comentario h2{
+padding: 20px 60px;
+}
+section.add_comentario{
+	margin: 50px auto;
+	width: 70%;
+	color: #088A29;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#ComentarioAddComentarioForm {
+	min-height: 250px;
+	margin: 25px;
+}
+#ComentarioAddComentarioForm {
+}
+section.add_comentario .input{
+	margin: 20px;
+
+}
+section.add_comentario .submit{
+	clear: both;
+	width: 60px;
+	margin: 1em 29px 0 0;
+	float: right;
+	
+}
+section.add_comentario .submit input{
+	background:  #088A29;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7),-1px -1px 1px rgba(0, 0, 0, 0.7);
+	border-radius: .5em;
+	border: none;
+	display: block;
+	font-weight: bold;
+	padding: .2em .5em;
+}
+#ComentarioEmail{
+	float: right;
+	width: 60%;
+}
+#ComentarioComentario{
+	width: 60%;
+	float: right;
 }
 /* Arreglos Varios */
 
@@ -233,9 +296,11 @@ h1, h2, h3, h4{
 	float: left;
 	width: 500px;
 }
-.busqueda .input.text label{
+.busqueda .input label{
+	color:  #088A29;
 	display: block;
 	float: left;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	width: 130px;
 }
 .busqueda .input.text input{
@@ -245,10 +310,6 @@ h1, h2, h3, h4{
 	border: 0;
 	box-shadow: 1px 1px 0 rgba(0,0,0,.25);
 	color: #088A29;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-}
-.busqueda .input.text label {
-	color:  #088A29;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 .gradiente{
@@ -287,7 +348,7 @@ h1, h2, h3, h4{
 	background: -webkit-linear-gradient(top,  rgba(0,166,80,1) 0%,rgba(184,199,191,1) 19%,rgba(203,203,203,0.98) 21%,rgba(203,203,203,0) 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom,  rgba(0,166,80,1) 0%,rgba(184,199,191,1) 19%,rgba(203,203,203,0.98) 21%,rgba(203,203,203,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a650', endColorstr='#00cbcbcb',GradientType=0 ); /* IE6-9 */
-	height: 100px;
+	min-height: 100px;
 }
 .footer {
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(224,224,224,1) 44%, rgba(203,203,203,1) 73%, rgba(203,203,203,1) 100%); /* FF3.6+ */
@@ -298,6 +359,28 @@ h1, h2, h3, h4{
 	background: linear-gradient(to bottom,  rgba(255,255,255,0.2) 0%,rgba(224,224,224,1) 44%,rgba(203,203,203,1) 73%,rgba(203,203,203,1) 100%); /* W3C */
 	clear: both;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#cbcbcb',GradientType=0 ); /* IE6-9 */
-	height: 100px;
+	min-height: 100px;
+}
+.socialmedia.post{
+	float: right;
+	width: 20%;
+	margin: 30px 0 0 0;
+}
+.socialmedia.post a{
+	color: #fff;
+	display: block;
+	float: left;
+	font-weight: bold;
+	height: 32px;
+	margin: 32px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	width: 32px;
+}
+.f{
+	background: url('/ecos/img/facebook.png');
+}
+.t{
+	background: url('/ecos/img/twitter.png');
 }
 

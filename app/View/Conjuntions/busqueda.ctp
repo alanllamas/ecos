@@ -3,7 +3,13 @@
 		echo $this->Form->create('Conjuntion', array('type'=>'post'));
 		echo $this->Form->input('key_words', array('label' => 'Palábras Clave:'));
 		echo $this->Form->input('tags', array('label' => 'Tags:')); 
+		echo $this->Form->input('idioma', array(
+				'label' => 'Idioma:',
+			    'options' => array('es-mx' => 'Español','en-us' => 'English','fr-fr' => 'Français' , 'el-el' => 'ελληνικά'),
+			    'default' => 'es-mx'
+			));
 	?>
+	
 	<section class="float-left clear">
 		<h3>Matriz</h3>
 		<table cellpadding="0" cellspacing="0" id="matriz">
@@ -102,7 +108,7 @@
 	<?php 
 		echo $this->Form->end(array("label" => "Buscar", "class" => "gradiente"));
 	?>
-</section>
+</section> 
 
 
 

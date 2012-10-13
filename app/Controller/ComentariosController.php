@@ -100,4 +100,10 @@ class ComentariosController extends AppController {
 		$this->Session->setFlash(__('El comentario no fue eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
+	public function add_comentario(){
+		$this->layout = "public";
+	}
+	public function comentarios(){
+		$this->layout = "public";
+	}
 }
