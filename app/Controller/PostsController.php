@@ -106,4 +106,15 @@ class PostsController extends AppController {
 		$this->Session->setFlash(__('El post no ha sido eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
+	public function post(){
+		$this->layout = "public";
+		$data =$this->Post->find('all');
+		$this->set('post', array_shift($data));
+	}
+	public function posts(){
+		$this->layout = "public";
+		$data =$this->Post->find('all');
+		$this->set('posts', $data);
+	}
 }
+
