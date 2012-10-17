@@ -47,11 +47,11 @@ class PostsController extends AppController {
 				$this->Session->setFlash(__('El post no ha sido guardado, intentelo nuevamente'));
 			}
 		}
-		$categorias = $this->Post->Categoria->find('list');
+		//$categorias = $this->Post->Categoria->find('list');
 		$users = $this->Post->User->find('list');
 		$conjuntions = $this->Post->Conjuntion->find('list');
 		$tags = $this->Post->Tag->find('list');
-		$this->set(compact('categorias', 'users', 'conjuntions', 'tags'));
+		$this->set(compact('users', 'conjuntions', 'tags'));
 	}
 
 /**
@@ -76,7 +76,7 @@ class PostsController extends AppController {
 		} else {
 			$this->request->data = $this->Post->read(null, $id);
 		}
-		$categorias = $this->Post->Categoria->find('list');
+		//$categorias = $this->Post->Categoria->find('list');
 		$users = $this->Post->User->find('list');
 		$conjuntions = $this->Post->Conjuntion->find('list');
 		$tags = $this->Post->Tag->find('list');

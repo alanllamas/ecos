@@ -6,11 +6,6 @@
 			<?php echo h($post['Post']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Categoria:'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($post['Categoria']['name'], array('controller' => 'categorias', 'action' => 'view', $post['Categoria']['id'])); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Usuario:'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>

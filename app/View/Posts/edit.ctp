@@ -4,7 +4,7 @@
 		<legend><?php echo __('Editar post'); ?></legend>
 	<?php
 		echo $this->Form->input('id', array('label' => 'ID:'));
-		echo $this->Form->input('categoria_id', array('label' => 'Categoria:'));
+		//echo $this->Form->input('categoria_id', array('label' => 'Categoria:'));
 		echo $this->Form->input('user_id', array('label' => 'Usuario:'));
 		echo $this->Form->input('title', array('label' => 'Título:'));
 		echo $this->Form->input('body', array('label' => 'Contenido:'));

@@ -3,8 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('categoria_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('user_id', 'Usuario'); ?></th>
 			<th><?php echo $this->Paginator->sort('title', 'Título'); ?></th>
 			<th><?php echo $this->Paginator->sort('body', 'Contenido'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Creado'); ?></th>
@@ -16,10 +15,7 @@
 	<tr>
 		<td><?php echo h($post['Post']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($post['Categoria']['name'], array('controller' => 'categorias', 'action' => 'view', $post['Categoria']['id'])); ?>
-		</td>
-		<td>
-			<?php echo $this->Html->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
+			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
 		</td>
 		<td><?php echo h($post['Post']['title']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['body']); ?>&nbsp;</td>
