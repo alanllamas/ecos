@@ -885,3 +885,6 @@
 #3 /home/alan/sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-10-14 22:44:35 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
