@@ -888,3 +888,90 @@
 2012-10-14 22:44:35 Error: [MissingControllerException] Controller class IndexController could not be found.
 #0 /home/alan/sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-10-17 20:21:42 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+#0 /home/neto/Sites/ecos/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /home/neto/Sites/ecos/lib/Cake/Controller/Controller.php(634): ComponentCollection->init(Object(PagesController))
+#2 /home/neto/Sites/ecos/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /home/neto/Sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-17 20:22:48 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:22:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 /home/neto/Sites/ecos/lib/Cake/Model/Datasource/DboSource.php(261): Mysql->connect()
+#1 /home/neto/Sites/ecos/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /home/neto/Sites/ecos/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#3 /home/neto/Sites/ecos/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#4 /home/neto/Sites/ecos/lib/Cake/Model/Model.php(3179): Model->setSource('posts')
+#5 /home/neto/Sites/ecos/lib/Cake/Model/Model.php(2630): Model->getDataSource()
+#6 /home/neto/Sites/ecos/app/Controller/PostsController.php(116): Model->find('all')
+#7 [internal function]: PostsController->posts()
+#8 /home/neto/Sites/ecos/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/neto/Sites/ecos/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /home/neto/Sites/ecos/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-17 20:23:43 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:23:44 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:23:44 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:23:44 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:32:36 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:32:36 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:32:36 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:36:10 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:36:10 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 20:36:10 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 21:46:13 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/home/neto/Sites/ecos/app/Model/Categoria.php, line 31]
+2012-10-17 21:46:13 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /home/neto/Sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/neto/Site...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/neto/Site...', 31, Array)
+#2 /home/neto/Sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/neto/Site...', 31, Array)
+#3 /home/neto/Sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-17 21:46:53 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 21:46:53 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-17 21:46:53 Error: [MissingControllerException] Controller class EcosController could not be found.
+#0 /home/neto/Sites/ecos/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-23 18:58:21 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 3179536 bytes) in [/home/neto/Sites/ecos/lib/Cake/Utility/String.php, line 247]
+2012-10-23 18:58:21 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 3179536 bytes)
+#0 /home/neto/Sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/home/neto/Site...', 247)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/home/neto/Site...', 247, Array)
+#2 /home/neto/Sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/home/neto/Site...', 247, Array)
+#3 /home/neto/Sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 18:58:48 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 3147428 bytes) in [/home/neto/Sites/ecos/lib/Cake/Utility/String.php, line 247]
+2012-10-23 18:58:48 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 3147428 bytes)
+#0 /home/neto/Sites/ecos/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/home/neto/Site...', 247)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/home/neto/Site...', 247, Array)
+#2 /home/neto/Sites/ecos/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/home/neto/Site...', 247, Array)
+#3 /home/neto/Sites/ecos/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

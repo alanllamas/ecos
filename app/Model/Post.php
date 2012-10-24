@@ -57,13 +57,6 @@ class Post extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Categoria' => array(
-			'className' => 'Categoria',
-			'foreignKey' => 'categoria_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
 		'User' => array(
 			'className' => 'User',
 			'foreignKey' => 'user_id',
@@ -101,6 +94,21 @@ class Post extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
+		'Categoria' => array(
+			'className' => 'Categoria',
+			'joinTable' => 'categorias_posts',
+			'foreignKey' => 'post_id',
+			'associationForeignKey' => 'categoria_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+			'deleteQuery' => '',
+			'insertQuery' => ''
+		),
 		'Conjuntion' => array(
 			'className' => 'Conjuntion',
 			'joinTable' => 'conjuntions_posts',

@@ -9,6 +9,14 @@ App::uses('AppModel', 'Model');
 class User extends AppModel {
 
 /**
+ * Field Name to display in options Form.
+ *
+ * @var string
+ */
+
+	public $displayField = "username";
+
+/**
  * Validation rules
  *
  * @var array

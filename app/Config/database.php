@@ -6,7 +6,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'hd1412',
+		'password' => '*EjV*',
 		'database' => 'ecos',
 		'encoding' => 'utf8'
 	);
